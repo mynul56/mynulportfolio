@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/three-animation.css">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -46,71 +48,68 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Mynul Islam</span></h1>
-			            <h2 class="mb-4">A Freelance Web Designer</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-
-	      <div class="slider-item">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> based in Bangladesh 2.0</h1>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
+    <section id="home-section" class="hero hero-section section-padding" style="background: var(--color-bg-primary); position: relative; overflow: hidden;">
+      <canvas id="hero-canvas" style="position: absolute; top: 0; left: 0; z-index: 1; pointer-events: none;"></canvas>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 ftco-animate">
+            <div class="text">
+              <h1>Md. Mynul Islam</h1>
+              <h2 class="mb-4" style="color: var(--color-text-secondary);">Developer & Digital Innovator</h2>
+              <p class="mb-4" style="color: var(--color-text-secondary); font-size: var(--font-size-body);">Full-Stack Web & Mobile Developer focused on user-centric, scalable applications using Flutter, React, and modern backend technologies.</p>
+              <div class="social-links mb-4">
+                <a href="https://github.com/mynul56" target="_blank" rel="noopener" class="mr-3" style="color: var(--color-text-primary);"><i class="icon-github"></i></a>
+                <a href="https://linkedin.com/in/mynulislam56" target="_blank" rel="noopener" style="color: var(--color-text-primary);"><i class="icon-linkedin"></i></a>
+              </div>
+              <p><a href="#projects-section" class="btn btn-primary py-3 px-4 mr-3">View Projects</a>
+                 <a href="#contact-section" class="btn btn-outline-light py-3 px-4">Contact Me</a></p>
+            </div>
+          </div>
+          <div class="col-md-5 ftco-animate">
+            <div class="phone-mockup position-relative">
+				<img src="images/Peptide Pal.jpg" alt="Peptide Pal App" class="img-fluid floating">
+              <div class="app-screenshot position-absolute" style="top: 12%; left: 6%; right: 6%; bottom: 15%; overflow: hidden; border-radius: 20px;">
+                <!-- <img src="images/Peptide Pal.jpg" alt="Peptide Pal App" class="img-fluid"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <section class="ftco-about ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
     		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+    			<div class="col-lg-12 pb-5">
     				<div class="row justify-content-start pb-3">
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>I am a student who works hard</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Mynul Islam</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>March 25,2001</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>UATTA Sector 12</span></li>
-		            	<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>islam15-5837@diu.edu.bd</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>01735968803</span></li>
-		            </ul>
+                    <p>I'm a passionate Computer Science and Engineering student (final year, CGPA 3.51) at Daffodil International University. I specialize in clean architecture, scalable systems, and smooth UI/UX across web and mobile platforms. Experienced in academic and entrepreneurial leadership, currently exploring AI/ML and blockchain to build innovative, secure digital products.</p>
+                    <div class="tech-stack mt-4">
+                        <h3 class="mb-3">Tech Stack</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="mb-2">Frontend</h4>
+                                <p>Flutter, Dart, React.js, Tailwind CSS</p>
+                                <h4 class="mb-2 mt-3">Backend</h4>
+                                <p>Node.js, Express.js</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="mb-2">Database</h4>
+                                <p>Firebase, MongoDB</p>
+                                <h4 class="mb-2 mt-3">Tools</h4>
+                                <p>VS Code, Git, GitHub, Figma, Postman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="about-info mt-4 px-md-0 px-2">
+                        <li class="d-flex"><span>Name:</span> <span>Md. Mynul Islam</span></li>
+                        <li class="d-flex"><span>Education:</span> <span>B.Sc. in CSE (CGPA: 3.51)</span></li>
+                        <li class="d-flex"><span>University:</span> <span>Daffodil International University</span></li>
+                        <li class="d-flex"><span>Email:</span> <span>mynulislamtanim@gmail.com</span></li>
+                        <li class="d-flex"><span>Phone:</span> <span>+8801735968803</span></li>
+                    </ul>
 		          </div>
 		        </div>
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
@@ -119,7 +118,7 @@
 	                <span class="number" data-number="120">0</span>
 	                <span>Project complete</span>
                 </p>
-                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p><a href="images/mynul-resume.pdf" download class="btn btn-primary py-3 px-3">Download CV</a></p>
               </div>
 	          </div>
 	        </div>
@@ -149,7 +148,7 @@
     					<span class="date">2018-2020</span>
     					<h2>HSC</h2>
     					<span class="position">HAZERATUJU DEGREE COLLEGE</span>
-    					<p class="mt-4">Rarely gone to college</p>
+    					<p class="mt-4">Regularly gone to college</p>
     				</div>
     			</div>
 
@@ -159,7 +158,7 @@
     					<span class="date">2016-2018</span>
     					<h2>SSC</h2>
     					<span class="position">Govt. Muslim High School</span>
-    					<p class="mt-4">that is what my life was</p>
+    					<p class="mt-4">best moments i got in my life</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2012-2015</span>
@@ -171,7 +170,7 @@
     		</div>
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="images/mynul-resume.pdf" download class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -190,10 +189,22 @@
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="#" class="services-1">
 							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-3">Mobile App Development</h3>
+								<p>Cross-platform apps with Flutter and native performance</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Web Design</h3>
+								<h3 class="mb-3">Web Development</h3>
+								<p>Modern web apps with React and responsive design</p>
 							</div>
 						</a>
 					</div>
@@ -203,17 +214,8 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Phtography</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Web Developer</h3>
+								<h3 class="mb-3">Backend Development</h3>
+								<p>Scalable APIs with Node.js and database integration</p>
 							</div>
 						</a>
 					</div>
@@ -221,10 +223,22 @@
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a href="#" class="services-1">
 							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-3">UI/UX Design</h3>
+								<p>User-centered design with Figma and modern patterns</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1">
+							<span class="icon">
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">App Developing</h3>
+								<h3 class="mb-3">AI/ML Integration</h3>
+								<p>Smart features with Python and machine learning</p>
 							</div>
 						</a>
 					</div>
@@ -234,17 +248,8 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Branding</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Product Strategy</h3>
+								<h3 class="mb-3">Blockchain Development</h3>
+								<p>Web3 solutions and smart contract integration</p>
 							</div>
 						</a>
 					</div>
@@ -265,7 +270,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>Photoshop</h3>
+							<h3>Flutter</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -276,7 +281,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>jQuery</h3>
+							<h3>Firebase</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
@@ -287,7 +292,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>HTML5</h3>
+							<h3>React</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
@@ -298,7 +303,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>CSS3</h3>
+							<h3>NextJs</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -309,7 +314,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
-							<h3>WordPress</h3>
+							<h3>NodeJS</h3>
 							<div class="progress">
 							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
 							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -344,61 +349,63 @@
           </div>
         </div>
     		<div class="row">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+    			<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
+	    					<h3><a href="#">Flutter Smart Home UI</a></h3>
+	    					<p>Real-time mobile interface with animations and intuitive UX</p>
+	    					<span class="tech-stack">Flutter • Dart • Firebase</span>
 	    				</div>
     				</div>
   				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+  				<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
+	    					<h3><a href="#">Bachelor's Home Management</a></h3>
+	    					<p>Platform for shared house management with focus on simplicity</p>
+	    					<span class="tech-stack">React • Node.js • MongoDB</span>
 	    				</div>
     				</div>
   				</div>
-
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
+    			<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
+	    					<h3><a href="#">EduBuddy – LMS UI</a></h3>
+	    					<p>Responsive learning management system with video integration</p>
+	    					<span class="tech-stack">Flutter Web • Firebase • WebRTC</span>
 	    				</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
+    			<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">CryptoTrack Dashboard</a></h3>
+	    					<p>Real-time crypto portfolio tracking with chart.js integration</p>
+	    					<span class="tech-stack">React • Tailwind CSS • REST APIs</span>
 	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">AI Resume Analyzer</a></h3>
+	    					<p>Python-based tool with NLP for resume analysis and scoring</p>
+	    					<span class="tech-stack">Python • NLP • React Frontend</span>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 mb-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Balazs Platform</a></h3>
+	    					<p>Startup platform for youth collaboration and productivity</p>
+	    					<span class="tech-stack">Node.js • Express • MongoDB</span>
 	    				</div>
     				</div>
     			</div>
@@ -508,7 +515,7 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/tk.jpg)">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
@@ -526,7 +533,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-            <p>ASAP contact me</p>
+            <p>Let's collaborate on your next project</p>
           </div>
         </div>
 
@@ -537,7 +544,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Uttara sector 12 </p>
+	            <p>Uttara sector 12, Dhaka, Bangladesh</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -546,7 +553,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">01735968803</a></p>
+	            <p><a href="tel://+8801735968803">+880 1735-968803</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -555,7 +562,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">islam15-5837@diu.edu.bd</a></p>
+	            <p><a href="mailto:mynulislamtanim@gmail.com">mynulislamtanim@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -563,11 +570,53 @@
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
           		</div>
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">mynul.com</a></p>
+          		<h3 class="mb-4">Social Links</h3>
+	            <div class="social-links">
+                <a href="https://github.com/mynul56" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub Profile"><i class="icon-github"></i></a>
+                <a href="https://www.linkedin.com/in/mynulislam56/?originalSubdomain=bd" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn Profile"><i class="icon-linkedin"></i></a>
+              </div>
 	          </div>
           </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="#" class="contact-form p-4 p-md-5 py-md-5 ftco-animate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" placeholder="Your Message" required></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="form-group">
+                    <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This portfolio is made with by <a href="URL_ADDRESSlib.com" target="_blank" rel="noopener">Mynul</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -592,6 +641,7 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script type="module" src="js/three-animation.js"></script>
     
   </body>
 </html>

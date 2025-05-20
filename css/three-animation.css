@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero canvas {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Reduce motion if user prefers */
+@media (prefers-reduced-motion: reduce) {
+    .hero canvas {
+        display: none;
+    }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .hero canvas {
+        opacity: 0.3;
+    }
+}

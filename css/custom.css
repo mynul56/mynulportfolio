@@ -1,0 +1,102 @@
+:root {
+  /* Color System */
+  --color-bg-primary: #1a1a2e;
+  --color-bg-secondary: #16213e;
+  --color-accent-primary: #4a90e2;
+  --color-accent-secondary: #50c878;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.7);
+  --color-text-muted: rgba(255, 255, 255, 0.5);
+  
+  /* Typography */
+  --font-size-hero-h1: clamp(2.5rem, 5vw, 4rem);
+  --font-size-section-h2: clamp(2rem, 4vw, 3rem);
+  --font-size-card-h3: clamp(1.25rem, 3vw, 1.75rem);
+  --font-size-body: clamp(1rem, 2vw, 1.125rem);
+  
+  /* Spacing */
+  --spacing-section: clamp(4rem, 8vw, 8rem);
+  --spacing-component: clamp(2rem, 4vw, 4rem);
+  --spacing-element: clamp(1rem, 2vw, 2rem);
+}
+
+/* Global Styles */
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+/* Typography Alignment */
+.hero-section {
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: var(--font-size-hero-h1);
+  font-weight: 700;
+  margin-bottom: var(--spacing-element);
+}
+
+.section-title {
+  font-size: var(--font-size-section-h2);
+  margin-bottom: var(--spacing-component);
+}
+
+.content-section {
+  text-align: left;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-accent-primary);
+  border-color: var(--color-accent-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-secondary);
+  border-color: var(--color-accent-secondary);
+}
+
+/* Project Cards */
+.project {
+  background-color: var(--color-bg-secondary);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  font-size: var(--font-size-card-h3);
+  color: var(--color-text-primary);
+}
+
+.project p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-body);
+}
+
+/* Responsive Spacing */
+.section-padding {
+  padding: var(--spacing-section) 0;
+}
+
+.component-margin {
+  margin-bottom: var(--spacing-component);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
